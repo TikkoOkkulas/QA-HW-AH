@@ -19,7 +19,7 @@ else:
     print("the numbers are equal, try next")
 
 
-"""
+""" 
 також згадав більш швидкий варіант
 if a != b or a != c or b != c:
     max = max(a, b, c)
