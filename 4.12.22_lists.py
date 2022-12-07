@@ -67,10 +67,15 @@ for i in A:
         min = i
 print("максимальне значення = ", max)
 print("мінімальне значення = ", min)
-
-
+A.clear()
 
 #7:
 print("Пользователь вводит текст нужно вывести количество чисел в этом тексте \
 Пример: 'Lorem 222 ipsum, 123 dolor 1 sit amet' Количество чисел: 3")
-string = (input(string("введіть текст: ")))
+string = (input("введіть текст: "))
+A = string.split(" ")
+x = 0
+for _ in A:
+    if _.isdigit():
+        x += 1
+print("кількість чисел в тексті = ", x)
