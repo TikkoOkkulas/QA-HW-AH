@@ -64,8 +64,6 @@ with open('numbers.txt', 'r') as x:
 # 'world' - 4
 with open('data2.txt', 'r', encoding='utf-8') as f:
     A = f.read().split()
-    #print(lst)
 dict = {x:A.count(x) for x in A}
-
 for i in sorted(dict, key=dict.get, reverse=True)[:5]:
     print(i, ' - ', dict[i], ' раз')
