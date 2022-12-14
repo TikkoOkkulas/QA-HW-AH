@@ -28,7 +28,7 @@ def sum_range(start, end):
     for i in range(start, end + 1):
         summ += i
     return summ
-A = (input('введіть 2 і більше числа через пробіл: ').split())
+A = (input('введите 2 или больше чисел через пробел: ').split())
 for i in range(len(A)):
     A[i] = int(A[i])
 print('sum =', sum_range(A[0], A[-1]))
@@ -47,5 +47,4 @@ def read_last(lines, file):
             data = file.readlines()[-lines:]
         for i in data:
             print(i.strip())
-
-read_last(int(input('введіть "положительное целое число": ')), 'data.txt')
+read_last(int(input('сколько последних строк вивести: ')), 'data.txt')
