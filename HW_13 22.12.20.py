@@ -21,8 +21,7 @@ class Human:
         self.phone = phone
         self.address = address
     def get_info(self):
-        for key, value in Human():
-            print(key, " :: ", value)
+        print(self.__dict__)
     def call(self, phone_number):
         print(f'{self.phone} вызывает абонента {phone_number}')
 
