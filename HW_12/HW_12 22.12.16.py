@@ -8,12 +8,11 @@
 
 
 def func(number):
-    i = 1
-    while i < number:
-        i = i * 2
-    if i == number:
-        print("yes")
+    if number == 1:
+        print('yes')
+    elif number < 1:
+        print('no')
     else:
-        print("no")
+        func(number / 2)
 
 func(int(input('введите целое число - number: ')))
