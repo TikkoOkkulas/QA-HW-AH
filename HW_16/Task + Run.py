@@ -22,6 +22,6 @@
 
 
 
-'''pytest -m "from_class and pack"
+'''pytest -m "from_class ot pack"
 pytest -m "not from_class"
 pytest -m "pack and not rest"'''
